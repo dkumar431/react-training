@@ -5,6 +5,7 @@ export default class FriendZone extends Component{
     return(
       <Fragment>
         <div>{this.props.left}</div>
+        {this.props.children}
         <div>{this.props.right}</div>
       </Fragment>
     )
@@ -19,3 +20,6 @@ export const ChatZone = () => {
   return <div>ChatZone</div>
 }
 
+export const FriendPosts = () => {
+  return <div>FriendPosts</div>
+}
